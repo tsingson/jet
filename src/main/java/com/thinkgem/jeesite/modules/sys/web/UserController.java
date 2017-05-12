@@ -49,7 +49,7 @@ public class UserController extends BaseController {
 
 	@Autowired
 	private SystemService systemService;
-	
+
 	@ModelAttribute
 	public User get(@RequestParam(required=false) String id) {
 		if (StringUtils.isNotBlank(id)){
@@ -72,7 +72,7 @@ public class UserController extends BaseController {
         model.addAttribute("page", page);
 		return "modules/sys/userList";
 	}
-	
+
 	@ResponseBody
 	@RequiresPermissions("sys:user:view")
 	@RequestMapping(value = {"listData"})
@@ -135,7 +135,7 @@ public class UserController extends BaseController {
 		addMessage(redirectAttributes, "保存用户'" + user.getLoginName() + "'成功");
 		return "redirect:" + adminPath + "/sys/user/list?repage";
 	}
-	
+
 	@RequiresPermissions("sys:user:edit")
 	@RequestMapping(value = "delete")
 	public String delete(User user, RedirectAttributes redirectAttributes) {
@@ -153,7 +153,7 @@ public class UserController extends BaseController {
 		}
 		return "redirect:" + adminPath + "/sys/user/list?repage";
 	}
-	
+
 	/**
 	 * 导出用户数据
 	 * @param user
@@ -226,7 +226,7 @@ public class UserController extends BaseController {
 		}
 		return "redirect:" + adminPath + "/sys/user/list?repage";
     }
-	
+
 	/**
 	 * 下载导入用户数据模板
 	 * @param response
@@ -303,7 +303,7 @@ public class UserController extends BaseController {
 	public User infoData() {
 		return UserUtils.getUser();
 	}
-	
+
 	/**
 	 * 修改个人用户密码
 	 * @param oldPassword
@@ -330,7 +330,7 @@ public class UserController extends BaseController {
 		model.addAttribute("user", user);
 		return "modules/sys/userModifyPwd";
 	}
-	
+
 	@RequiresPermissions("user")
 	@ResponseBody
 	@RequestMapping(value = "treeData")
@@ -347,7 +347,10 @@ public class UserController extends BaseController {
 		}
 		return mapList;
 	}
-    
+
+
+
+
 //	@InitBinder
 //	public void initBinder(WebDataBinder b) {
 //		b.registerCustomEditor(List.class, "roleList", new PropertyEditorSupport(){
