@@ -520,11 +520,13 @@
 	"buffers":
 	[
 		{
-			"file": "db/cms/jeesite.erm",
+			"contents": "{\n\t\"folders\":\n\t[\n\t\t{\n\t\t\t\"path\": \".\"\n\t\t}\n\t]\n}\n",
+			"file": "jet.sublime-project",
+			"file_size": 45,
+			"file_write_time": 131390567490000000,
 			"settings":
 			{
-				"buffer_size": 128325,
-				"encoding": "UTF-8",
+				"buffer_size": 45,
 				"line_ending": "Unix"
 			}
 		}
@@ -743,10 +745,7 @@
 	},
 	"expanded_folders":
 	[
-		"/Users/qinshen/git/java-project/jeelin",
-		"/Users/qinshen/git/java-project/jeelin/db",
-		"/Users/qinshen/git/java-project/jeelin/db/act",
-		"/Users/qinshen/git/java-project/jeelin/db/cms"
+		"/Users/qinshen/git/java-project/jet"
 	],
 	"file_history":
 	[
@@ -885,9 +884,11 @@
 	},
 	"find_in_files":
 	{
-		"height": 130.0,
+		"height": 148.0,
 		"where_history":
 		[
+			"/Users/qinshen/git/java-project/jeelin/src,*.xml",
+			"/Users/qinshen/git/java-project/jeelin/src",
 			"/Users/qinshen/git/tsingson-github-io",
 			"/Users/qinshen/git/java-workspace/moss_htcf/portal/idsp/src/main/webapp/gis",
 			"/Users/qinshen/git/java-workspace/moss_htcf/portal/idsp/src/main/webapp/gis,*.css",
@@ -1013,9 +1014,7 @@
 			"/Users/qinshen/git/house-project/partner-jet/src/main,*.xml",
 			"/Users/qinshen/git/house-project/partner-jet/src/main,*.java",
 			"/Users/qinshen/git/house-project/partner-jet/src/main",
-			"/Users/qinshen/git/house-project/partner-jet/src/main,*.xml",
-			"/Users/qinshen/git/house-project/partner-jet/src/main,*.java,*.xml",
-			"/Users/qinshen/git/house-project/house-jet/src/main,*.java,*.xml"
+			"/Users/qinshen/git/house-project/partner-jet/src/main,*.xml"
 		]
 	},
 	"find_state":
@@ -1023,6 +1022,7 @@
 		"case_sensitive": true,
 		"find_history":
 		[
+			"redis",
 			"陶瓷",
 			"深圳口琴社区",
 			"舌堵",
@@ -1149,8 +1149,7 @@
 			"fmt",
 			"JeeSite",
 			"spring",
-			"spring.io",
-			"The supplied data appears to be in"
+			"spring.io"
 		],
 		"highlight": true,
 		"in_selection": false,
@@ -1301,11 +1300,11 @@
 			[
 				{
 					"buffer": 0,
-					"file": "db/cms/jeesite.erm",
+					"file": "jet.sublime-project",
 					"semi_transient": true,
 					"settings":
 					{
-						"buffer_size": 128325,
+						"buffer_size": 45,
 						"regions":
 						{
 						},
@@ -1323,12 +1322,27 @@
 							{
 								"close":
 								{
+									"1":
+									[
+										43,
+										44
+									]
 								},
 								"icon":
 								{
+									"1":
+									[
+										"Packages/BracketHighlighter/icons/curly_bracket.png",
+										"brackethighlighter.default"
+									]
 								},
 								"open":
 								{
+									"1":
+									[
+										0,
+										1
+									]
 								},
 								"unmatched":
 								{
@@ -1336,65 +1350,63 @@
 							},
 							"bracket_highlighter.regions":
 							[
-								"bh_angle",
-								"bh_angle_center",
-								"bh_angle_open",
-								"bh_angle_close",
-								"bh_angle_content",
-								"bh_c_define",
-								"bh_c_define_center",
-								"bh_c_define_open",
-								"bh_c_define_close",
-								"bh_c_define_content",
 								"bh_curly",
 								"bh_curly_center",
 								"bh_curly_open",
 								"bh_curly_close",
 								"bh_curly_content",
-								"bh_default",
-								"bh_default_center",
-								"bh_default_open",
-								"bh_default_close",
-								"bh_default_content",
-								"bh_square",
-								"bh_square_center",
-								"bh_square_open",
-								"bh_square_close",
-								"bh_square_content",
 								"bh_double_quote",
 								"bh_double_quote_center",
 								"bh_double_quote_open",
 								"bh_double_quote_close",
 								"bh_double_quote_content",
-								"bh_round",
-								"bh_round_center",
-								"bh_round_open",
-								"bh_round_close",
-								"bh_round_content",
-								"bh_single_quote",
-								"bh_single_quote_center",
-								"bh_single_quote_open",
-								"bh_single_quote_close",
-								"bh_single_quote_content",
 								"bh_regex",
 								"bh_regex_center",
 								"bh_regex_open",
 								"bh_regex_close",
 								"bh_regex_content",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_square_content",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_angle_content",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_single_quote_content",
 								"bh_unmatched",
 								"bh_unmatched_center",
 								"bh_unmatched_open",
 								"bh_unmatched_close",
 								"bh_unmatched_content",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_default_content",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_round_content",
+								"bh_c_define",
+								"bh_c_define_center",
+								"bh_c_define_open",
+								"bh_c_define_close",
+								"bh_c_define_content",
 								"bh_tag",
 								"bh_tag_center",
 								"bh_tag_open",
 								"bh_tag_close",
 								"bh_tag_content"
 							],
-							"color_scheme": "Packages/User/Color Highlighter/themes/Monokai (SL).tmTheme",
-							"syntax": "Packages/XML/XML.sublime-syntax",
-							"translate_tabs_to_spaces": false
+							"syntax": "Packages/zzz A File Icon zzz/aliases/JSON (Sublime).sublime-syntax"
 						},
 						"translation.x": 0.0,
 						"translation.y": 0.0,
@@ -1412,7 +1424,7 @@
 	},
 	"input":
 	{
-		"height": 43.0
+		"height": 52.0
 	},
 	"layout":
 	{
@@ -1474,7 +1486,7 @@
 		"height": 456.0
 	},
 	"pinned_build_system": "",
-	"project": "jeelin.sublime-project",
+	"project": "jet.sublime-project",
 	"replace":
 	{
 		"height": 62.0
@@ -2027,7 +2039,7 @@
 	"show_open_files": true,
 	"show_tabs": true,
 	"side_bar_visible": true,
-	"side_bar_width": 608.0,
+	"side_bar_width": 204.0,
 	"status_bar_visible": true,
 	"template_settings":
 	{
