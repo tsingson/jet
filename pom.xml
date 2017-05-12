@@ -934,16 +934,16 @@
 									<classpath refid="maven.test.classpath" />
 									<transaction src="db/sys/jeesite_${jdbc.type}.sql"/>
 									<transaction src="db/cms/jeesite_${jdbc.type}.sql"/>
-									<transaction src="db/oa/jeesite_${jdbc.type}.sql"/>
+									<!-- transaction src="db/oa/jeesite_${jdbc.type}.sql"/ -->
 									<transaction src="db/gen/jeesite_${jdbc.type}.sql"/>
 									<transaction src="db/gen/example_${jdbc.type}.sql"/>
 									<transaction src="db/test/jeesite_${jdbc.type}.sql"/>
-									<transaction src="db/act/drop/activiti.${jdbc.type}.drop.engine.sql"/>
+									<!-- transaction src="db/act/drop/activiti.${jdbc.type}.drop.engine.sql"/>
 									<transaction src="db/act/drop/activiti.${jdbc.type}.drop.history.sql"/>
 									<transaction src="db/act/drop/activiti.${jdbc.type}.drop.identity.sql"/>
 									<transaction src="db/act/create/activiti.${jdbc.type}.create.engine.sql"/>
 									<transaction src="db/act/create/activiti.${jdbc.type}.create.history.sql"/>
-									<transaction src="db/act/create/activiti.${jdbc.type}.create.identity.sql"/>
+									<transaction src="db/act/create/activiti.${jdbc.type}.create.identity.sql"/ -->
 								</sql>
 
 								<taskdef name="dbunit" classname="org.dbunit.ant.DbUnitTask" classpathref="maven.test.classpath" />
