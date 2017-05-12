@@ -3,15 +3,14 @@
  */
 package com.thinkgem.jeesite.modules.cms.web.front;
 
-import javax.servlet.http.HttpServletRequest;
-
+import com.thinkgem.jeesite.common.web.BaseController;
+import com.thinkgem.jeesite.modules.cms.utils.WiexinSignUtil;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.ResponseBody;
 
-import com.thinkgem.jeesite.common.web.BaseController;
-import com.thinkgem.jeesite.modules.cms.utils.WiexinSignUtil;
+import javax.servlet.http.HttpServletRequest;
 
 /**
  * 测试Controller

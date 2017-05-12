@@ -3,11 +3,17 @@
  */
 package com.thinkgem.jeesite.modules.cms.web;
 
-import java.util.List;
-
-import javax.servlet.http.HttpServletRequest;
-import javax.servlet.http.HttpServletResponse;
-
+import com.thinkgem.jeesite.common.mapper.JsonMapper;
+import com.thinkgem.jeesite.common.persistence.Page;
+import com.thinkgem.jeesite.common.utils.StringUtils;
+import com.thinkgem.jeesite.common.web.BaseController;
+import com.thinkgem.jeesite.modules.cms.entity.Article;
+import com.thinkgem.jeesite.modules.cms.entity.Category;
+import com.thinkgem.jeesite.modules.cms.entity.Site;
+import com.thinkgem.jeesite.modules.cms.service.*;
+import com.thinkgem.jeesite.modules.cms.utils.CmsUtils;
+import com.thinkgem.jeesite.modules.cms.utils.TplUtils;
+import com.thinkgem.jeesite.modules.sys.utils.UserUtils;
 import org.apache.shiro.authz.annotation.RequiresPermissions;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
@@ -18,21 +24,9 @@ import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.servlet.mvc.support.RedirectAttributes;
 
-import com.thinkgem.jeesite.common.mapper.JsonMapper;
-import com.thinkgem.jeesite.common.persistence.Page;
-import com.thinkgem.jeesite.common.utils.StringUtils;
-import com.thinkgem.jeesite.common.web.BaseController;
-import com.thinkgem.jeesite.modules.cms.entity.Article;
-import com.thinkgem.jeesite.modules.cms.entity.Category;
-import com.thinkgem.jeesite.modules.cms.entity.Site;
-import com.thinkgem.jeesite.modules.cms.service.ArticleDataService;
-import com.thinkgem.jeesite.modules.cms.service.ArticleService;
-import com.thinkgem.jeesite.modules.cms.service.CategoryService;
-import com.thinkgem.jeesite.modules.cms.service.FileTplService;
-import com.thinkgem.jeesite.modules.cms.service.SiteService;
-import com.thinkgem.jeesite.modules.cms.utils.CmsUtils;
-import com.thinkgem.jeesite.modules.cms.utils.TplUtils;
-import com.thinkgem.jeesite.modules.sys.utils.UserUtils;
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+import java.util.List;
 
 /**
  * 文章Controller
@@ -153,3 +147,5 @@ public class ArticleController extends BaseController {
    		return tplList;
    	}
 }
+
+
