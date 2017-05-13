@@ -15,7 +15,7 @@ import com.thinkgem.jeesite.common.persistence.DataEntity;
 /**
  * 单表生成Entity
  * @author ThinkGem
- * @version 2015-04-06
+ * @version 2017-05-13
  */
 public class TestData extends DataEntity<TestData> {
 	
